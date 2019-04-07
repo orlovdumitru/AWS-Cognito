@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <script type="text/javascript" src="./assets/js/aws-cognito-sdk.min.js"></script>
+        <script type="text/javascript" src="./assets/js/amazon-cognito-identity.min.js"></script>
+        <script type="text/javascript" src="./assets/js/jsbn.js"></script>
+        <script type="text/javascript" src="./assets/js/jsbn2.js"></script>
+        <script type="text/javascript" src="./assets/js/sjcl.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/social_buttons.css">
+
+        <title>Enter code</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <form id="verificationCodeForm">
+            <h1 class="text-center">Please enter verfication code</h1>
+            <div class="form-group row justify-content-center">
+                <label for="userName" class="col-sm-2 col-form-label">Verification code</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="confirmationCode" placeholder="Code" name="confirmationCode" required autofocus>
+                </div>
+                <br>
+            <button type="submit" class="btn btn-success" onclick="checkVerificationCode()">Check code</button>
+            <button type="button" class="btn btn-secondary" onclick="resendVerificationCode()">Resend code</button>
+        </form>
+      </div>
+
+        
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

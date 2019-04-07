@@ -1,0 +1,10 @@
+#registerForm label{
+  text-align: right;
+}
+
+
+@media (max-width: 576px){
+  #registerForm label{
+    text-align: left;
+  }
+}
